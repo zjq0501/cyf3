@@ -4,12 +4,12 @@ import numpy as np
 import joblib  
 import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.tree import DecisionTreeClassifier
+# from sklearn.ensemble import RandomForestRegressor
+# from sklearn.tree import DecisionTreeClassifier
 
 # 修复DecisionTreeClassifier兼容性问题
-if not hasattr(DecisionTreeClassifier, 'monotonic_cst'):
-    DecisionTreeClassifier.monotonic_cst = None
+# if not hasattr(DecisionTreeClassifier, 'monotonic_cst'):
+#     DecisionTreeClassifier.monotonic_cst = None
 
 # 设置页面为宽模式
 st.set_page_config(layout="wide")
